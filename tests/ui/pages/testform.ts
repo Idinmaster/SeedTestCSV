@@ -65,8 +65,10 @@ export class TestFormPage {
     }
   }
 
-  async clickConfirm(){
+  async clickContinue(){
     await this.continueButton.click();
+  }
+  async clickConfirm(){
     await this.confirmButton.click();
   }
 
