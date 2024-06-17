@@ -31,25 +31,3 @@ records.forEach(record => {
         await testform.validCheck();
     });
 });
-
-// test('test', async ({ page }) => {
-//     await page.goto('https://formsmarts.com/form/mfe?mode=h5');
-//     await page.getByPlaceholder('Please enter your first name.').click();
-//     await page.getByPlaceholder('Please enter your first name.').fill('Peera');
-//     await page.getByPlaceholder('Please enter your last name.').click();
-//     await page.getByPlaceholder('Please enter your last name.').fill('Kuldon');
-//     await page.getByPlaceholder('Please enter a valid email').click();
-//     await page.getByPlaceholder('Please enter a valid email').fill('Happ@email.com');
-//     await page.getByLabel('Country:').selectOption('TZ');
-//     await page.getByLabel('Country:').selectOption('ES');
-//     await page.getByLabel('1-Month Subscription ($9.99').check()
-//     await page.getByLabel('6-Month Subscription Save $7.').check();
-//     await page.getByLabel('1-Year Subscription Save $20.').check();
-//     await page.getByLabel('Claim a FREE 7-day Trial').check();
-//     await page.getByLabel('Claim a FREE 7-day Trial').uncheck();
-//     await page.getByRole('button', { name: 'Continue →' }).click();
-//     await page.getByRole('button', { name: 'Confirm →' }).click();
-//     const page1Promise = page.waitForEvent('popup');
-//     await page.getByRole('button', { name: 'Proceed to Payment' }).click();
-//     await page.getByRole('heading', { name: 'Subscription Form Demo' })
-//   });
