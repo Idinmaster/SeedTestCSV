@@ -1,0 +1,3 @@
+Firstname,Lastname,Email,Country,OneMonthSubscript,SixMonthSubscript,OneYearSubscript,ClaimTrial
+Goofy,Mouse,goofy@email.com,TZ,TRUE,FALSE,FALSE,FALSE
+Kool,Aid,aid@email.com,ES,FALSE,TRUE,FALSE,TRUE
