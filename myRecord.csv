@@ -1,3 +1,11 @@
 Firstname,Lastname,Email,Country,OneMonthSubscript,SixMonthSubscript,OneYearSubscript,ClaimTrial
 Goofy,Mouse,goofy@email.com,TZ,TRUE,FALSE,FALSE,FALSE
 Kool,Aid,aid@email.com,ES,FALSE,TRUE,FALSE,TRUE
+Kyle,Cartman,south@email.com,TH,FALSE,FALSE,TRUE,FALSE
+Doodle,Man,doodle@email.com,SG,TRUE,FALSE,FALSE,TRUE
+Pixie,Fairy,taleof@email.com,PE,FALSE,TRUE,FALSE,FALSE
+Minus,Plus,Mathguy@email.com,IE,FALSE,FALSE,TRUE,TRUE
+Progamer,Real,Inwzaa007@email.com,MX,TRUE,FALSE,FALSE,FALSE
+Wattson,Amelia,Holo@live.com,US,FALSE,TRUE,FALSE,TRUE
+Jonh,Cena,WWE@email.com,VN,FALSE,FALSE,TRUE,FALSE
+Test,Test,test@email.com,TR,TRUE,FALSE,FALSE,TRUE
