@@ -18,18 +18,38 @@ test.beforeEach(async ({ page }) => {
 });
 
 records.forEach(record => {
-    test(`Customer: ${record.Firstname}` ,async ({ page }) => {
-        await testform.fillFirstname(record.Firstname);
-        await testform.fillLastname(record.Lastname);
-        await testform.fillEmail(record.Email);
-        await testform.selectCountry(record.Country);
-        await testform.oneMonthCheck(record.OneMonthSubscript);
-        await testform.sixMonthCheck(record.SixMonthSubscript);
-        await testform.oneYearCheck(record.OneYearSubscript);
-        await testform.checkClaim(record.ClaimTrial);
-        await testform.clickContinue();
-        await testform.clickConfirm();
-        await testform.validCheck();
+    test.describe(`Viewport 1280 x 720: ${record.Firstname}`,() => {
+        test.use({viewport:{width:1280,height:720}})
+        test(`Customer: ${record.Firstname}` ,async ({ page }) => {
+            await testform.fillAll(record.Firstname,record.Lastname,record.Email,record.Country,
+                record.OneMonthSubscript,record.SixMonthSubscript,record.OneYearSubscript,record.ClaimTrial
+            )
+            await testform.clickContinue();
+            await testform.clickConfirm();
+            await testform.validCheck();
+        });
+    });
+    test.describe(`Viewport 1024 x 576: ${record.Firstname}`,() => {
+        test.use({viewport:{width:1024,height:576}})
+        test(`Customer: ${record.Firstname}` ,async ({ page }) => {
+            await testform.fillAll(record.Firstname,record.Lastname,record.Email,record.Country,
+                record.OneMonthSubscript,record.SixMonthSubscript,record.OneYearSubscript,record.ClaimTrial
+            )
+            await testform.clickContinue();
+            await testform.clickConfirm();
+            await testform.validCheck();
+        });
+    });
+    test.describe(`Viewport 640 x 398: ${record.Firstname}`,() => {
+        test.use({viewport:{width:640,height:398}})
+        test(`Customer: ${record.Firstname}` ,async ({ page }) => {
+            await testform.fillAll(record.Firstname,record.Lastname,record.Email,record.Country,
+                record.OneMonthSubscript,record.SixMonthSubscript,record.OneYearSubscript,record.ClaimTrial
+            )
+            await testform.clickContinue();
+            await testform.clickConfirm();
+            await testform.validCheck();
+        });
     });
 });
 

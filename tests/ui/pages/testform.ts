@@ -65,6 +65,17 @@ export class TestFormPage {
     }
   }
 
+  async fillAll(a:string,b:string,c:string,d:string,e:string,f:string,g:string,h:string) {
+    await this.fillFirstname(a);
+    await this.fillLastname(b);
+    await this.fillEmail(c);
+    await this.selectCountry(d);
+    await this.oneMonthCheck(e);
+    await this.sixMonthCheck(f);
+    await this.oneYearCheck(g);
+    await this.checkClaim(h);
+  }
+
   async clickContinue(){
     await this.continueButton.click();
   }
